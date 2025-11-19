@@ -29,22 +29,22 @@
   .main__info-text--1120{
     display: none;
   }
-  .header__item-repair{
+  .header__item--repair{
     order: 2;
   }
-  .header__item-repair:before{
+  .header__item--repair:before{
     content: "";
     width: 2px;
     height: 32px;
     background-color: #eaeaea;
     border-radius: 1px;
   }
-  .header__item-repair{
+  .header__item--repair{
     display: flex;
     align-items: center;
     gap: 16px;
   }
-  .header__item-search{
+  .header__item--search{
     order: 3;
   }
   .header__menu--before::before{
@@ -71,6 +71,11 @@
     margin-right: 20px;
   }
 }
+
+
+/*--------------------------------------------*/
+
+
 @media (width >=1120px) {
   .header{
     display: none;
@@ -117,15 +122,35 @@
     align-items: center;
     margin-right: 32px;
   }
-  .mainH-desktop__item--did::before{
-    content: "Оставить заявку";
+  .mainH-desktop__link--did::after{
+    content: url("icons/ic/screw.svg");
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
   }
-  .mainH-desktop__item{
+  .mainH-desktop__link{
+    text-decoration: none;
+    color: #1b1c21;
     display: flex;
     align-items: center;
     gap: 8px;
   }
-  .mainH-desktop__item--status::before{
-    content: "Статус ремонта";
+  .mainH-desktop__link--status::after{
+    content: url("icons/ic/search.svg");
+    width: 40px;
+    height: 40px;
+    background-color: #FF3E79;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
   }
 }
