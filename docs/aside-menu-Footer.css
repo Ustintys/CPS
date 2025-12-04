@@ -1,0 +1,74 @@
+.footer-aside-menu{
+  position: relative;
+  min-height: 240px;
+  height: 100%;
+}
+.footer-aside-menu__inner{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.footer-aside-menu__list{
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  gap: 16px;
+}
+.footer-aside-menu__link{
+  width: 40px;
+  height: 40px;
+  background-color: #FF3E79;
+  border-radius: 50%;
+  color: white;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*<------------------------------->*/
+
+.footer-aside-data{
+  width: 250px;
+}
+.footer-aside-data__link{
+  display: block;
+  text-decoration: none;
+  padding-left: 24px;
+  height: 24px;
+  color: #1b1c21;
+}
+.footer-aside-data__link--mail{
+  margin-bottom: 12px;
+}
+.footer-aside-data__link--tel{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: -0.03em;
+}
+
+/*<------------------------------->*/
+
+.lang-list{
+  display: flex;
+  gap: 7px;
+  margin-top: 40px;
+  margin-left: 24px;
+  margin-bottom: 40px;
+}
+.lang-list__button{
+  border: none;
+  background: none;
+  transition: 0.2s;
+  padding: 0;
+}
+.lang-list__button:hover{
+  opacity: 0.6;
+}
+.lang-list__button--active{
+  opacity: 0.6;
+}
